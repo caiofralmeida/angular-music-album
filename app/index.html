@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en" ng-app="musicAlbum">
+    <head>
+        <meta charset="utf-8">
+        <title>Music Album</title>
+        <link rel="stylesheet" href="bower_components/pure/pure-min.css">
+        <link rel="stylesheet" href="css/app.css">
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="js/controllers.js"></script>
+    </head>
+
+    <body ng-controller="AlbumController">
+
+      <p ng-repeat="item in album">{{ item.artist }} - {{ item.music }}</p>
+
+    </body>
+</html>
